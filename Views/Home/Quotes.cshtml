@@ -1,0 +1,17 @@
+<h1 class="text-center m-3 mb-5">Here are the awesome quotes</h1>
+<div class="row mt-5">
+    <div class="col-1"></div>
+    <div class="col-10">
+        <ul class="list-group list-group-flush">
+            @{
+                for(int i = 0; i < ViewBag.quotes.Count; i++){
+                    <li class="list-group-item">
+                        <p>@ViewBag.quotes[i]["quote"]</p>
+                        <p class="ml-5"> - @ViewBag.quotes[i]["name"] at @ViewBag.quotes[i]["created_at"]</p>
+                    </li>
+
+                }
+            }
+        </ul>
+    </div>
+</div>

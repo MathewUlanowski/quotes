@@ -1,0 +1,39 @@
+<h1></h1>
+<div class="row">
+    <div class="col-1"></div>
+    <div class="col-10">
+        <div class="border bg-light shadow m-5 p-3">
+            <form action="/quotes" method="post">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="name">
+                                <h4>Your Name:</h4>
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label for="quote">
+                                <h4>Your quote: </h4>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <input type="text" class="form-control mb-3" name="name">
+                        <textarea name="quote" class="form-control"></textarea>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <a href="/quotes" class="btn btn-success">
+                            Skip to Quotes
+                        </a>
+                    </div>
+                    <div class="col-6">
+                        <input type="submit" class="btn btn-success" value="Add my Quote!">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
