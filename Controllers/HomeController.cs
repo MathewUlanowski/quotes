@@ -20,8 +20,9 @@ namespace QuotingDojo.Controllers
 
         // PROCESS NEW QUOTE ROUTE
         [HttpPost("quotes")]
-        public RedirectToActionResult CreateQuote()
+        public RedirectToActionResult CreateQuote(string name, string quote)
         {
+            DbConnector.Execute($"insert into quotes (quote, name) values ('{quote}','{name}')");
             Console.WriteLine("\n\n\nPOSTING\n\n\n");
             return RedirectToAction("Quotes");
         }
